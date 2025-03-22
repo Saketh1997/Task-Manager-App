@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.text}>Welcome to the Task Manager App</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -15,6 +15,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    height: '30',
+  },
+  text: {
+    fontFamily: 'Arial', // Change to your desired system font
+    fontSize: 20, // Optional: Adjust font size
+    fontWeight: 'normal', // Optional: Adjust font weight
+    fontStyle: 'italic', // Optional: Apply italic style
   },
 });
